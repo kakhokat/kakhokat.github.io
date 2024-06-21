@@ -1,5 +1,3 @@
-import './style.scss'
-
 const progressCircle = document.querySelector('.progress-ring__circle');
 const radius = progressCircle.r.baseVal.value;
 const circumference = 2 * Math.PI * radius;
