@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.scss">
+    <title>Progress</title>
+  </head>
+  <body>
+    <span>Progress</span>
+    <div class="page">
+      <div class="container">
+        <div class="progress-block" id="progressBlock">
+          <svg class="progress-ring" width="120" height="120">
+            <circle class="progress-ring__background" stroke="lightgray" stroke-width="8" fill="transparent" r="56" cx="60" cy="60"/>
+            <circle class="progress-ring__circle" stroke="blue" stroke-width="8" fill="transparent" r="56" cx="60" cy="60"/>
+          </svg>
+        </div>
+        </div>
+        <div class="container">
+          <div class="controls">
+            <div class="control-container">
+              <div class="wrapper">
+                <input class="progress-input" type="number" id="valueInput" min="0" max="100" value="0">
+              </div>
+              <div class="control-label">Value</div>
+            </div>
+            <div class="control-container">
+              <div class="wrapper">
+                <input class="toggle" type="checkbox" id="animateSwitch">
+                <label class="slider-btn" for="animateSwitch"></label>
+              </div>
+              <div class="control-label">Animate</div>
+            </div>
+            <div class="control-container">
+              <div class="wrapper">
+                <input class="toggle" type="checkbox" id="hideSwitch">
+                <label class="slider-btn" for="hideSwitch"></label>
+              </div>
+              <div class="control-label">Hide</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
